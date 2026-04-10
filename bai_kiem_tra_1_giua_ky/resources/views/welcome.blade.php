@@ -51,10 +51,6 @@
                 backdrop-filter: blur(14px);
             }
 
-            .hero {
-                padding: 18px 10px 18px 6px;
-            }
-
             .eyebrow {
                 margin: 0 0 12px;
                 font-size: 13px;
@@ -76,28 +72,6 @@
                 color: var(--muted);
             }
 
-            .features {
-                display: grid;
-                gap: 14px;
-                margin-top: 28px;
-            }
-
-            .feature {
-                padding: 18px;
-                border-radius: 20px;
-                background: rgba(255, 255, 255, 0.46);
-                border: 1px solid rgba(120, 89, 64, 0.1);
-            }
-
-            .feature strong,
-            .feature span {
-                display: block;
-            }
-
-            .feature strong {
-                margin-bottom: 6px;
-            }
-
             .cta-panel {
                 display: grid;
                 align-content: center;
@@ -106,6 +80,11 @@
                 border-radius: 24px;
                 background: linear-gradient(165deg, rgba(82, 35, 17, 0.96), rgba(143, 67, 30, 0.88));
                 color: #fff6ef;
+            }
+
+            .hero {
+                display: grid;
+                align-content: center;
             }
 
             .cta-panel p {
@@ -153,31 +132,12 @@
                 <section class="hero">
                     <p class="eyebrow">Bai kiem tra 1 giua ky</p>
                     <h1>Xay dung chuc nang dang nhap va dang ky nguoi dung</h1>
-                    <p>
-                        He thong nay dap ung yeu cau cua de bai bang route GET/POST, giao dien Blade dung form gui du
-                        lieu len server va su dung Eloquent ORM de tao nguoi dung trong bang <strong>users</strong>.
-                    </p>
-
-                    <div class="features">
-                        <div class="feature">
-                            <strong>Route xu ly ro rang</strong>
-                            <span>Co duong dan rieng cho hien thi form, gui form, dashboard va dang xuat.</span>
-                        </div>
-                        <div class="feature">
-                            <strong>Template dung chung</strong>
-                            <span>Hai giao dien dang nhap va dang ky ke thua cung mot layout Blade.</span>
-                        </div>
-                        <div class="feature">
-                            <strong>Luu nguoi dung bang Eloquent</strong>
-                            <span>Khi dang ky, du lieu duoc validate va tao ban ghi moi trong database.</span>
-                        </div>
-                    </div>
+                    <p>Chon thao tac ben phai.</p>
                 </section>
 
                 <aside class="cta-panel">
                     <p class="eyebrow">Bat dau</p>
-                    <h2>Truy cap he thong tai khoan</h2>
-                    <p>Ban co the tao tai khoan moi hoac dang nhap bang tai khoan da co de vao dashboard.</p>
+                    <h2>Tai khoan</h2>
 
                     <div class="button-row">
                         @auth

@@ -70,6 +70,9 @@
                 background:
                     linear-gradient(160deg, rgba(82, 35, 17, 0.92), rgba(143, 67, 30, 0.9)),
                     #5f2a12;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
             }
 
             .form-card {
@@ -93,39 +96,13 @@
             }
 
             .brand-card p,
-            .brand-card li,
             .lead {
                 line-height: 1.7;
                 color: var(--muted);
             }
 
-            .brand-card p,
-            .brand-card li {
+            .brand-card p {
                 color: rgba(255, 246, 239, 0.84);
-            }
-
-            .brand-list {
-                margin: 28px 0 0;
-                padding-left: 18px;
-            }
-
-            .brand-list li + li {
-                margin-top: 10px;
-            }
-
-            .badge-row {
-                display: flex;
-                flex-wrap: wrap;
-                gap: 10px;
-                margin-top: 28px;
-            }
-
-            .badge {
-                padding: 10px 14px;
-                border-radius: 999px;
-                background: rgba(255, 246, 239, 0.12);
-                border: 1px solid rgba(255, 246, 239, 0.16);
-                font-size: 14px;
             }
 
             .title {
@@ -275,22 +252,7 @@
                 <div class="brand-card">
                     <p class="eyebrow">He thong quan ly sinh vien</p>
                     <h1>Dang nhap va dang ky tai khoan bang Laravel</h1>
-                    <p>
-                        Bai lam nay su dung route GET/POST, form gui du lieu len server va Eloquent ORM de thao tac
-                        voi bang <strong>users</strong>.
-                    </p>
-
-                    <ul class="brand-list">
-                        <li>Dang ky tao tai khoan moi truoc khi truy cap he thong.</li>
-                        <li>Dang nhap bang session de vao khu vuc quan ly.</li>
-                        <li>Giao dien dang nhap va dang ky dung chung mot template Blade.</li>
-                    </ul>
-
-                    <div class="badge-row">
-                        <span class="badge">Laravel 12</span>
-                        <span class="badge">Eloquent ORM</span>
-                        <span class="badge">Blade Form</span>
-                    </div>
+                    <p>Quan ly tai khoan.</p>
                 </div>
             </section>
 

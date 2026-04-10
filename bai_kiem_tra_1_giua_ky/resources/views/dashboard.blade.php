@@ -143,7 +143,6 @@
             <div class="card">
                 <p class="eyebrow">Dashboard</p>
                 <h1>Dang nhap thanh cong</h1>
-                <p>Tai khoan cua ban da duoc xac thuc qua session va co the dung lam diem vao cho cac chuc nang tiep theo cua he thong quan ly sinh vien.</p>
 
                 @if (session('status'))
                     <div class="status">{{ session('status') }}</div>
